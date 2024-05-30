@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --dark-color-lighten: #f2f5ff;
+  --red-card: #a62121;
+  --blue-card: #4bb7e6;
+  --btn: #141414;
+  --btn-hover: #3a3a3a;
+  --text: #fbf7f7;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+#main12 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  
+}
+button {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  color: var(--text) !important;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+#img1 {
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  user-select: none;
+  transition: transform 500ms ease-in-out;
+}
+
+.containerCard {
+  height: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  position: relative;
+  padding: 1rem;
+  width: 350px;
+  height: 450px;
+  box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+  border-radius: 0.9rem;
+  color: var(--text) !important;
+  cursor: pointer;
+}
+
+
+
+.product-image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transform: translate(0, -0.2rem);
+  transition: transform 500ms ease-in-out;
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.372));
+}
+.product-info {
+  text-align: center;
+}
+
+.card:hover .product-image {
+  transform: translate(0, -1.1rem) scale(0.9);
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.913));
+
+} 
+
+.product-info h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.product-info p {
+  margin: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+.buy-btn {
+  background-color: var(--btn) !important;
+  padding: 0.6rem 3.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 300ms ease;
+}
+.buy-btn:hover {
+  background-color: var(--btn-hover) !important;
+}
+.fav {
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid#000;
+  display: grid;
+  place-items: center;
+}
+
+.svg {
+  height: 25px;
+  width: 25px;
+  fill: #fff;
+  transition: all 500ms ease;
+}
+
+.fav:hover .svg {
+  fill: #000;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    height: auto;
+  }
+  .container {
+    padding: 2rem 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+#Anymain{
+  background: #00003f;
+  height: 110dvh;
+}
+body{
+  background-color: #ffffffe6 !important;
+}
+
+
+.content {
+  --_gap: 1.5rem;
+  --_color: hsl(60 92% 71% / 1);
+  width: 58%;
+  max-width: 500px;
+  padding: 2.75rem;
+  border: 2px solid hsl(60deg 67% 44% / 64%);
+  border-radius: 20px;
+  color: var(--_color);
+}
+
+.content p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: var(--_gap);
+}
+
+.content span {
+  font-size: 1.3em;
+  letter-spacing: 1.3px;
+  line-height: 1.2;
+}
+
+.content button {
+  display: block;
+  margin-top: var(--_gap);
+  padding: 0.6em 0.9em;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  background: #020043;
+  margin-left: auto;
+  color: var(--_color);
+}
+
+.blob {
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  aspect-ratio: 1/1;
+  animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+    alternate forwards;
+  filter: blur(40px);
+  z-index: -1;
+  background: linear-gradient(
+    47deg,
+    rgba(255, 88, 139, 1) 21%,
+    rgb(0 164 173) 67%,
+    rgba(118, 74, 166, 1) 81%
+  );
+
+}
+
+@keyframes animate {
+  0% {
+    translate: 40% -25%;
+    border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+  }
+  50% {
+    translate: 0% 13%;
+    border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+    rotate: 41deg;
+    scale: 1.15;
+  }
+  100% {
+    translate: -45% 39%;
+    border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+    rotate: -60deg;
+    scale: 1.05;
+  }
+}
+
+#BackMain{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  overflow: hidden;
+}
